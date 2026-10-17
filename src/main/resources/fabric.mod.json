@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "chunkreset",
+	"version": "${version}",
+	"name": "ChunkReset",
+	"description": "Logs every block change and lets operators roll any region back to how it was at a chosen point in time, without restarting the server.",
+	"authors": [
+		"ChunkReset contributors"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.chunkreset.ChunkReset"
+		]
+	},
+	"mixins": [
+		"chunkreset.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
